@@ -24,9 +24,11 @@ public class Test extends UI {
 
         HorizontalLayout buttons = new HorizontalLayout(numbers, reset);
         Label instruction = new Label("1: Enter not null Value (1-3)" +
-                "\n2: Click the reset button (ComboboxValue goes to 0)" +
-                "\n3: Click IN the combobox, and enter the previous (!!!) value by HAND ! (not selecting with mouse from the dropDown Menu)" +
-                "\n4: Click TAB to switch from the Combobox to the 'show Values' button. The value from Combobox will be resetet to 0. If you enter OTHER Value then the previous, then everything is working fine.",
+                "\n2: Click Tab or somewhere else (lose focus, but don'T click on Reset Button as first !)" +
+                "\n3: Click the reset button (ComboboxValue goes to 0)" +
+                "\n4: Click IN the combobox, and enter the previous (!!!) value by HAND ! (not selecting with mouse from the dropDown Menu)" +
+                "\n5: Click TAB to switch from the Combobox to the 'show Values' button. The value from Combobox will be resetet to 0. If you enter OTHER Value then the previous, then everything is working fine." +
+                "\n If you click the reset button as step 2, the value fast switches to zero and then to the corect Value, looks like that fix you was talking about ;) !",
                 ContentMode.PREFORMATTED);
 
         VerticalLayout mainLayout = new VerticalLayout(buttons, instruction);
